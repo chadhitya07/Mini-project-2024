@@ -1,0 +1,93 @@
+/* src/pages/GetStarted.css */
+/* Import a custom font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.get-started-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://img.freepik.com/free-photo/view-illuminated-neon-gaming-keyboard-setup-controller_23-2149529367.jpg?w=996&t=st=1722967382~exp=1722967982~hmac=99223298e9d102c7bc1bd042af7e1b9e6f6690142b15efecc179cdbd00256b4c'); /* Add your background image path here */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.get-started-title {
+  margin-bottom: 16px;
+  font-size: 2.5rem;
+  color: white;
+  animation: textAnimation 3s ease-in-out infinite;
+  font-family: 'Lobster', cursive; /* Use the custom font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.suiii {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://i.pinimg.com/originals/ca/e1/1d/cae11df222ff8639d02aa7b81d1d296a.gif'); /* Add your background image path here */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: large;
+}
+
+.suvi{
+  margin-bottom: 50px;
+  font-size: 100px;
+  color: white;
+  font-family: 'Lobster', cursive; /* Use the custom font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotate(-3deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1) rotate(3deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) rotate(-3deg);
+  }
+}

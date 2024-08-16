@@ -1,0 +1,23 @@
+/* Sidebar.css */
+.dashboard-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(90deg, white, black); /* Set background gradient */
+  color: white; /* Set default text color */
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dashboard-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: black; /* Set text color to black for contrast */
+}

@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1; /* Takes up the remaining space */
+  display: flex;
+  margin-top: 64px; /* Height of the AppBar */
+}
+
+.main-content {
+  flex-grow: 1;
+  margin-left: 60px; /* Width of the Sidebar */
+  padding: 70px;
+}
+
+.footer {
+  background-color: #dee0e4; /* Example background color */
+  color: #ffffff; /* Text color */
+  padding: 60px 0; /* Padding for top and bottom */
+  text-align: center; /* Center text */
+  margin-bottom: auto; /* Push footer to the bottom */
+}
+
+.footer .contact-info {
+  margin: 0 auto; /* Center the content horizontally */
+  max-width: 800px; /* Set a max width for better control */
+}
+
+.footer .contact-info p {
+  margin: 5px 0; /* Margin for individual contact info lines */
+  font-size: 14px; /* Adjust font size */
+}
+
+.footer .contact-info a {
+  color: #61dafb; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer .contact-info a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+.footer .copyright {
+  margin-top: 10px; /* Space between contact info and copyright */
+  font-size: 12px; /* Smaller font for copyright */
+}
